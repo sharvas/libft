@@ -16,7 +16,7 @@ char	*ft_strtrim(char const *s)
 {
 	int	start;
 	int	end;
-	char	*ret;
+	char	*str;
 	int	i;
 
 	if (!s)
@@ -24,18 +24,16 @@ char	*ft_strtrim(char const *s)
 	start = 0;
 	i = ft_strlen(s);
 	end = i - 1;
-	while (s[start] && (s[start] == ' ' || s[start] == 9 || s[start] == '\n'))
+	while (s[start] && (s[start] == ' ' || s[start] == '\t' || s[start] == '\n'))
 		start++;
 	if (start == i)
 		return (ft_strdup(""));
 	while (s[end] == ' ' || s[end] == '\t' || s[end] == '\n')
 		end--;
-	ret = (char *)malloc(sizeof(*ret) * (end - start) + 2);
-	if (!ret)
+	if (!(str = ft_strnew((end - start) + 1)))
 		return (NULL);
 	i = 0;
 	while (start <= end)
-		ret[i++] = s[start++];
-	ret[i] = 0;
-	return (ret);
+		str[i++] = s[start++];
+	return (str);
 }

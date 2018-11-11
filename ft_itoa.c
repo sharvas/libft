@@ -45,7 +45,7 @@ char	*ft_itoa(int n)
 		nb = -n;
 	else
 		nb = n;
-	if (!(num = ft_strnew(len + 1)))
+	if (!(num = ft_strnew(len)))
 		return (NULL);
 	while (nb > 0)
 	{
