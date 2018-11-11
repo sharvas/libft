@@ -6,7 +6,7 @@
 /*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/06 20:11:11 by svaskeli          #+#    #+#             */
-/*   Updated: 2018/11/10 11:51:03 by svaskeli         ###   ########.fr       */
+/*   Updated: 2018/11/11 11:48:23 by svaskeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_atoi(const char *str)
 {
-	int		sign;
+	int			sign;
 	long long	num;
 
 	sign = 1;

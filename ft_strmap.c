@@ -6,7 +6,7 @@
 /*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 10:47:12 by svaskeli          #+#    #+#             */
-/*   Updated: 2018/11/09 13:47:03 by svaskeli         ###   ########.fr       */
+/*   Updated: 2018/11/11 11:53:32 by svaskeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ char	*ft_strmap(char const *s, char (*f)(char))
 {
 	unsigned int	len;
 	unsigned int	i;
-	char		*str;
+	char			*str;
 
 	if (!s || !f)
 		return (NULL);

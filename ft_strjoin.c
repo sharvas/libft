@@ -6,7 +6,7 @@
 /*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/08 11:48:49 by svaskeli          #+#    #+#             */
-/*   Updated: 2018/11/09 13:47:33 by svaskeli         ###   ########.fr       */
+/*   Updated: 2018/11/11 11:53:11 by svaskeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char		*str;
+	char			*str;
 	unsigned int	i;
 	unsigned int	len1;
 	unsigned int	len2;

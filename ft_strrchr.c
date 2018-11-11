@@ -6,7 +6,7 @@
 /*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/07 15:33:57 by svaskeli          #+#    #+#             */
-/*   Updated: 2018/11/08 18:17:14 by svaskeli         ###   ########.fr       */
+/*   Updated: 2018/11/11 11:54:15 by svaskeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int	i;
+	int		i;
 	char	ch;
-	int	mark;
+	int		mark;
 	char	*s1;
 
 	i = 0;

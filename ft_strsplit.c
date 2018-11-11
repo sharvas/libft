@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/11/11 11:55:40 by svaskeli          #+#    #+#             */
+/*   Updated: 2018/11/11 11:57:08 by svaskeli         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 static size_t	ft_count(char const *s, char c)
@@ -23,7 +35,7 @@ static size_t	ft_count(char const *s, char c)
 	return (count);
 }
 
-static char	*ft_word(char const *s, char c)
+static char		*ft_word(char const *s, char c)
 {
 	size_t	size;
 	char	*str;
@@ -42,7 +54,7 @@ static char	*ft_word(char const *s, char c)
 	return (str);
 }
 
-char		**ft_strsplit(char const *s, char c)
+char			**ft_strsplit(char const *s, char c)
 {
 	char	**str;
 	size_t	len;
