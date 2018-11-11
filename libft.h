@@ -90,5 +90,6 @@ size_t				ft_strlcpy(char *dest, const char *src, size_t size);
 char				*ft_strndup(const char *s1, size_t n);
 char				*ft_strrev(char *str);
 void				ft_swap(char *a, char *b);
+int				ft_isspace(int c);
 
 #endif
