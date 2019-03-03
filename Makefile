@@ -6,13 +6,13 @@
 #    By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/03/03 19:25:09 by svaskeli          #+#    #+#              #
-#    Updated: 2019/03/03 19:25:13 by svaskeli         ###   ########.fr        #
+#    Updated: 2019/03/03 19:50:12 by svaskeli         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-FLAGS = -Wall -Werror -Wextra
+FLAGS = -Wall -Werror -Wextra -g
 
 SRCS =	ft_2d_char_free.c		ft_memchr.c				ft_strjoin.c \
 		ft_2d_int_free.c		ft_memcmp.c				ft_strjoinfree.c \
@@ -41,6 +41,7 @@ SRCS =	ft_2d_char_free.c		ft_memchr.c				ft_strjoin.c \
 		ft_lstmap.c				ft_strdup.c				ft_toupper.c \
 		ft_lstnew.c				ft_strequ.c				get_next_line.c \
 		ft_memalloc.c			ft_striter.c			ft_memccpy.c \
+		get_next_line_multi_fd.c
 
 SRCS_PF =	binary.c				build_width.c			parse_flags_width.c \
 			read_floats.c			build_float.c			error_protection.c \
