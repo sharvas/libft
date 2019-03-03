@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libft.h"
 
 void	ft_parse(t_print *all, va_list ap)
 {
@@ -29,7 +29,7 @@ void	ft_parse(t_print *all, va_list ap)
 void	ft_read(t_print *all, va_list ap)
 {
 	if (all->type == 'i' || all->type == 'd' || all->type == 'u'
-		||	all->type == 'o' || all->type == 'x' || all->type == 'X')
+		|| all->type == 'o' || all->type == 'x' || all->type == 'X')
 		ft_number(all, ap);
 	else if (all->type == 's')
 		ft_string(all, ap);
@@ -51,8 +51,9 @@ void	ft_justify(char *num_str, t_print *all)
 		num_str = ft_precision(num_str, all);
 	if ((!all->minus && (all->plus || all->hash || all->space) && (!all->zero
 		|| all->type == 'o' || ((all->type == 'x' || all->type == 'X')
-		&& (!all->zero) && !all->width)) && all->type != 'c') || (all->type == 'x'
-		&& all->hash && all->prec_set && all->width && !all->num_zero))
+		&& (!all->zero) && !all->width)) && all->type != 'c')
+		|| (all->type == 'x' && all->hash && all->prec_set && all->width
+		&& !all->num_zero))
 		num_str = ft_build_prefix(num_str, all);
 	if (all->type == 'c' && all->char_zero == 1)
 		all->width--;

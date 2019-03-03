@@ -12,10 +12,13 @@
 
 #ifndef LIBFT_H
 # define LIBFT_H
+
 # include <string.h>
 # include <stdint.h>
 # include <stdlib.h>
 # include <unistd.h>
+# include "get_next_line.h"
+# include "ft_printf.h"
 
 int					ft_atoi(const char *str);
 intmax_t			ft_atoi_intmax(const char *str);
@@ -104,4 +107,5 @@ int					get_next_line(const int fd, char **line);
 void				ft_freestr(char *str);
 char				**ft_split_whitespaces(char *str);
 int					ft_isblank(int c);
+
 #endif
