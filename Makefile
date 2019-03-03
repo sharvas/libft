@@ -41,7 +41,7 @@ SRCS =	ft_2d_char_free.c		ft_memchr.c				ft_strjoin.c \
 		ft_lstmap.c				ft_strdup.c				ft_toupper.c \
 		ft_lstnew.c				ft_strequ.c				get_next_line.c \
 		ft_memalloc.c			ft_striter.c			ft_memccpy.c \
-		get_next_line_multi_fd.c
+		get_next_line_simple.c
 
 SRCS_PF =	binary.c				build_width.c			parse_flags_width.c \
 			read_floats.c			build_float.c			error_protection.c \

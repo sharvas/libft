@@ -3,70 +3,68 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: dfinnis <marvin@42.fr>                     +#+  +:+       +#+        */
+/*   By: svaskeli <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/01/11 13:24:26 by dfinnis           #+#    #+#             */
-/*   Updated: 2019/01/11 13:24:27 by dfinnis          ###   ########.fr       */
+/*   Created: 2018/11/13 14:52:16 by svaskeli          #+#    #+#             */
+/*   Updated: 2018/11/20 16:56:23 by svaskeli         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_get_line(char **line, char *str)
+static int	ft_get_line(const int fd, char **line, char *str, char **mem)
 {
-	char	*tmp;
-
-	tmp = NULL;
 	if (ft_strchr(str, '\n') == NULL)
 	{
-		tmp = *line;
-		if (!(*line = ft_strjoin(*line, str)))
+		if (!(*line = ft_strjoinfree_s1(*line, str)))
 			return (-1);
-		ft_freestr(tmp);
-		ft_freestr(str);
+		ft_strclr(str);
 	}
 	else
 	{
-		ft_freestr(str);
+		mem[fd] = ft_strchr(str, '\n') + 1;
+		*ft_strchr(str, '\n') = '\0';
+		if (!(*line = ft_strjoinfree_s1(*line, str)))
+			return (-1);
 		return (1);
 	}
 	return (0);
 }
 
-static int	ft_gnl_error(char **line, char *str)
+static int	ft_get_from_mem(const int fd, char **line, char **mem, char *str)
 {
-	int	g;
-
-	g = 0;
-	if ((g = ft_get_line(line, str)) == 1)
-		return (1);
-	else if (g == -1)
+	if (mem[fd])
 	{
-		ft_freestr(str);
-		return (-1);
+		if (ft_get_line(fd, line, mem[fd], mem) == 1)
+		{
+			ft_freestr(str);
+			return (1);
+		}
 	}
 	return (0);
 }
 
-int			get_next_line(const int fd, char **line)
+int	get_next_line(const int fd, char **line)
 {
-	char	*str;
-	int		k;
-	int		g;
+	static char	*mem[MAX_FD];
+	char		*s;
+	int			k;
 
-	if (line == NULL || fd < 0 || !(*line = ft_strdup("")))
+	if (BUFF_SIZE < 1 || line == NULL || fd < 0 || !(s = ft_strnew(BUFF_SIZE)))
+		return (-1);
+	if (fd >= MAX_FD || !(*line = ft_strnew(BUFF_SIZE)))
 		return (-1);
 	k = 1;
+	if (ft_get_from_mem(fd, line, mem, s))
+		return (1);
 	while (k > 0)
 	{
-		if (!(str = ft_strnew(1)))
+		if ((k = read(fd, s, BUFF_SIZE)) == -1)
 			return (-1);
-		if ((k = read(fd, str, 1)) == -1)
-			return (-1);
-		if ((g = ft_gnl_error(line, str)) == 1)
+		if (ft_get_line(fd, line, s, mem) == 1)
 			return (1);
-		else if (g == -1)
-			return (-1);
+		else
+			ft_freestr(s);
 		if (k == 0 && !*line[0])
 			return (0);
 		else if (k == 0 && *line[0])

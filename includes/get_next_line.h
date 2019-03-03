@@ -16,7 +16,7 @@
 # define BUFF_SIZE 11000
 # define MAX_FD 13000
 
+int	get_next_line_simple(const int fd, char **line);
 int	get_next_line(const int fd, char **line);
-int	get_next_line_mfd(const int fd, char **line);
 
 #endif
