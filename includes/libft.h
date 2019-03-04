@@ -101,7 +101,6 @@ size_t				ft_strlcpy(char *dst, const char *src, size_t size);
 int					ft_sqrt(int num);
 void				ft_2d_int_free(int **array, int size);
 void				ft_2d_char_free(char **array);
-int					get_next_line(const int fd, char **line);
 void				ft_freestr(char *str);
 char				**ft_split_whitespaces(char *str);
 int					ft_isblank(int c);
