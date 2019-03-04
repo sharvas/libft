@@ -4,7 +4,32 @@ A personal C library with many recreated C Standard Library functions (including
 
 To compile run ```make```. It will compale a library ***libft.a***. Compile projects with this library to use the fuctions.
 
-There is a simple main file included 
+There is a simple main file included:
+```c
+#include "libft.h"
+#include <fcntl.h>
+
+int main (int ac, char **av)
+{
+    char *str;
+    int fd;
+
+    fd = open(av[1], O_RDONLY);
+    while (get_next_line(fd, &str) == 1)
+    {
+        ft_printf("%s\n", str);
+        free(str);
+    }
+    free(str);
+    close (fd);
+    return (0);
+}
+```
+
+To compile:
+```c
+
+```
 
 Functions in the library:
 ```c
@@ -103,6 +128,6 @@ void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NTg4NTk1MiwxNDg2MjQ1OTQ0LDkzMz
-EwOTMzOF19
+eyJoaXN0b3J5IjpbLTg5NTU3MzIxNSwxNTk1ODg1OTUyLDE0OD
+YyNDU5NDQsOTMzMTA5MzM4XX0=
 -->
