@@ -7,6 +7,8 @@ In alphabetical order:
 int			get_next_line_simple(const int fd, char **line);
 int			get_next_line(const int fd, char **line);
 
+int			ft_printf(char const *format, ...);
+
 int			ft_atoi(const char *str);
 intmax_t	ft_atoi_intmax(const char *str);
 void		ft_bzero(void *s, size_t n);
@@ -62,34 +64,32 @@ char		**ft_strsplit(char const *s, char c);
 char		*ft_strstr(const char *haystack, const char *needle);
 char		*ft_strsub(char const *s, unsigned int start, size_t len);
 char		*ft_strtrim(char const *s);
-char			*ft_strrev(char *str);
-char				*ft_strndup(const char *s1, size_t n);
-char				*ft_strjoinfree(char *s1, char *s2);
-char				*ft_strjoinfree_s1(char *s1, char *s2);
-char				*ft_strjoinfree_s2(char *s1, char *s2);
-size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+char		*ft_strrev(char *str);
+char		*ft_strndup(const char *s1, size_t n);
+char		*ft_strjoinfree(char *s1, char *s2);
+char		*ft_strjoinfree_s1(char *s1, char *s2);
+char		*ft_strjoinfree_s2(char *s1, char *s2);
+size_t		ft_strlcpy(char *dst, const char *src, size_t size);
+char		**ft_split_whitespaces(char *str);
 
-int					ft_tolower(int c);
-int					ft_toupper(int c);
-void				ft_swap(char *a, char *b);
+int			ft_tolower(int c);
+int			ft_toupper(int c);
+void		ft_swap(char *a, char *b);
+int			ft_isblank(int c);
+int			ft_sqrt(int num);
 
-t_list				*ft_lstnew(void const *content, size_t content_size);
-void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstadd(t_list **alst, t_list *new);
-void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list		*ft_lstnew(void const *content, size_t content_size);
+void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void		ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void		ft_lstadd(t_list **alst, t_list *new);
+void		ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
-
-
-int					ft_sqrt(int num);
-void				ft_2d_int_free(int **array, int size);
-void				ft_2d_char_free(char **array);
-void				ft_freestr(char *str);
-char				**ft_split_whitespaces(char *str);
-int					ft_isblank(int c);
+void		ft_2d_int_free(int **array, int size);
+void		ft_2d_char_free(char **array);
+void		ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIzNjEyOTYyOCwxNDg2MjQ1OTQ0LDkzMz
-EwOTMzOF19
+eyJoaXN0b3J5IjpbOTA1MzU0ODQ3LDE0ODYyNDU5NDQsOTMzMT
+A5MzM4XX0=
 -->
