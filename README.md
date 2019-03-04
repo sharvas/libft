@@ -2,7 +2,7 @@
 
 A personal C library with many recreated C Standard Library functions (including printf) and several additional functions used in other projects (including get_next_line).
 
-To compile run ```make```. It will compale a library ***libft.a***. Compile projects with this library to use the fuctions.
+To compile run ```make```. It will compile a library ***libft.a***. Compile projects with this library to use the functions.
 
 There is a simple main file included:
 ```c
@@ -33,7 +33,7 @@ gcc main.c libft.a -I includes/
 
 Ant the resulting program behaves similarly to ```cat```:
 ```bash
-➜  libft git:(master) ✗ ./a.out text.txt
+➜  libft ./a.out text.txt
 One
 Two
 And three!!!
@@ -41,7 +41,7 @@ And three!!!
 oh why...
 ```
 ```bash
-➜  libft git:(master) ✗ cat text.txt
+➜  libft cat text.txt
 One
 Two
 And three!!!
@@ -146,6 +146,6 @@ void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDk5MzMyNjUsLTQ4ODAwNDU5NywxNT
-k1ODg1OTUyLDE0ODYyNDU5NDQsOTMzMTA5MzM4XX0=
+eyJoaXN0b3J5IjpbNjg2MzExMDk1LC00ODgwMDQ1OTcsMTU5NT
+g4NTk1MiwxNDg2MjQ1OTQ0LDkzMzEwOTMzOF19
 -->
