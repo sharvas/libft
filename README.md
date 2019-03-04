@@ -1,6 +1,7 @@
 # libft
 
-A personal C library with many recreated stdlib functions ().
+A personal C library with many recreated stdlib functions (including printf and get_next_line).
+
 
 ft_2d_char_free.c
 ft_2d_int_free.c
@@ -84,6 +85,6 @@ ft_toupper.c
 get_next_line.c
 get_next_line_simple.c
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTIyNjYyMjEyLDE0ODYyNDU5NDQsOTMzMT
-A5MzM4XX0=
+eyJoaXN0b3J5IjpbLTE2NzY0MjU2MDgsMTQ4NjI0NTk0NCw5Mz
+MxMDkzMzhdfQ==
 -->
