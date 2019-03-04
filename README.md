@@ -145,8 +145,9 @@ void ft_2d_int_free(int **array, int size);
 void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
-Function cannot leak. All errors must be handled carefully. In no way can the function quit in an unexpected manner (Segmentation fault, bus error, double free, etc).
+All function are written according to the 42 standard:
+*Functions cannot leak. All errors must be handled carefully. In no way can the function quit in an unexpected manner (Segmentation fault, bus error, double free, etc).*
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxMTAwMjk4NiwtNDg4MDA0NTk3LDE1OT
-U4ODU5NTIsMTQ4NjI0NTk0NCw5MzMxMDkzMzhdfQ==
+eyJoaXN0b3J5IjpbLTE1ODY2NDA5NzQsLTQ4ODAwNDU5NywxNT
+k1ODg1OTUyLDE0ODYyNDU5NDQsOTMzMTA5MzM4XX0=
 -->
