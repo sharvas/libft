@@ -7,35 +7,35 @@ A personal C library with many recreated C Standard Library functions (including
 Functions in the library:
 ```c
 // INPUT:
-int			get_next_line_simple(const int fd, char **line);
-int			get_next_line(const int fd, char **line);
+int get_next_line_simple(const int fd, char **line);
+int get_next_line(const int fd, char **line);
 
 // OUTPUT:
-int			ft_printf(char const *format, ...);
-void		ft_putchar(char c);
-void		ft_putchar_fd(char c, int fd);
-void		ft_putendl(char const *s);
-void		ft_putendl_fd(char const *s, int fd);
-void		ft_putnbr(int nb);
-void		ft_putnbr_fd(int n, int fd);
-void		ft_putstr(char const *s);
-void		ft_putstr_fd(char const *s, int fd);
+int ft_printf(char const *format, ...);
+void ft_putchar(char c);
+void ft_putchar_fd(char c, int fd);
+void ft_putendl(char const *s);
+void ft_putendl_fd(char const *s, int fd);
+void ft_putnbr(int nb);
+void ft_putnbr_fd(int n, int fd);
+void ft_putstr(char const *s);
+void ft_putstr_fd(char const *s, int fd);
 
 // NUMBERS:
-int			ft_atoi(const char *str);
-intmax_t	ft_atoi_intmax(const char *str);
-char		*ft_itoa(int n);
-char		*ft_itoa_intmax(intmax_t n);
-char		*ft_itoa_unsigned(uintmax_t n);
-char		*ft_itoa_base(uintmax_t n, int b, char type);
-int			ft_sqrt(int num);
+int ft_atoi(const char *str);
+intmax_t ft_atoi_intmax(const char *str);
+char *ft_itoa(int n);
+char *ft_itoa_intmax(intmax_t n);
+char *ft_itoa_unsigned(uintmax_t n);
+char *ft_itoa_base(uintmax_t n, int b, char type);
+int ft_sqrt(int num);
 
 // MEMORY:
-void		*ft_memalloc(size_t size);
-void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
-void		*ft_memchr(const void *s, int c, size_t n);
-int			ft_memcmp(const void *s1, const void *s2, size_t n);
-void		*ft_memcpy(void *dst, const void *src, size_t n);
+void *ft_memalloc(size_t size);
+void *ft_memccpy(void *dst, const void *src, int c, size_t n);
+void *ft_memchr(const void *s, int c, size_t n);
+int ft_memcmp(const void *s1, const void *s2, size_t n);
+void *ft_memcpy(void *dst, const void *src, size_t n);
 void		ft_memdel(void **ap);
 void		*ft_memmove(void *dst, const void *src, size_t n);
 void		*ft_memset(void *b, int c, size_t len);
@@ -101,6 +101,6 @@ void		ft_2d_char_free(char **array);
 void		ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDIyNjE1OSwxNDg2MjQ1OTQ0LDkzMzEwOT
-MzOF19
+eyJoaXN0b3J5IjpbLTM1Nzc0NTQwNSwxNDg2MjQ1OTQ0LDkzMz
+EwOTMzOF19
 -->
