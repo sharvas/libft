@@ -26,10 +26,13 @@ int main (int ac, char **av)
 }
 ```
 
-To compile:
-```c
-
+To compile type:
+```shell
+gcc main.c libft.a -I includes/
 ```
+
+Ant the resulting program behaves similarly to ```cat```:
+
 
 Functions in the library:
 ```c
@@ -128,6 +131,6 @@ void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5NTU3MzIxNSwxNTk1ODg1OTUyLDE0OD
+eyJoaXN0b3J5IjpbLTQ4ODAwNDU5NywxNTk1ODg1OTUyLDE0OD
 YyNDU5NDQsOTMzMTA5MzM4XX0=
 -->
