@@ -2,7 +2,7 @@
 
 A personal C library with many recreated C Standard Library functions (including printf) and several additional functions used in other projects (including get_next_line).
 
-
+To compile run ```make```. It will create 
 
 Functions in the library:
 ```c
@@ -101,6 +101,6 @@ void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNTQyMjc3MywxNDg2MjQ1OTQ0LDkzMz
-EwOTMzOF19
+eyJoaXN0b3J5IjpbLTE4NjgyOTg2NzcsMTQ4NjI0NTk0NCw5Mz
+MxMDkzMzhdfQ==
 -->
