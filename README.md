@@ -4,6 +4,8 @@ A personal C library with many recreated C Standard Library functions (including
 
 In alphabetical order:
 ```c
+int					get_next_line(const int fd, char **line);
+
 int					ft_atoi(const char *str);
 intmax_t			ft_atoi_intmax(const char *str);
 void				ft_bzero(void *s, size_t n);
@@ -59,30 +61,34 @@ char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *haystack, const char *needle);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strtrim(char const *s);
-int					ft_tolower(int c);
-int					ft_toupper(int c);
-t_list				*ft_lstnew(void const *content, size_t content_size);
-void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void				ft_lstadd(t_list **alst, t_list *new);
-void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-void				ft_swap(char *a, char *b);
 char				*ft_strrev(char *str);
 char				*ft_strndup(const char *s1, size_t n);
 char				*ft_strjoinfree(char *s1, char *s2);
 char				*ft_strjoinfree_s1(char *s1, char *s2);
 char				*ft_strjoinfree_s2(char *s1, char *s2);
 size_t				ft_strlcpy(char *dst, const char *src, size_t size);
+
+int					ft_tolower(int c);
+int					ft_toupper(int c);
+void				ft_swap(char *a, char *b);
+
+t_list				*ft_lstnew(void const *content, size_t content_size);
+void				ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void				ft_lstadd(t_list **alst, t_list *new);
+void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+
+
 int					ft_sqrt(int num);
 void				ft_2d_int_free(int **array, int size);
 void				ft_2d_char_free(char **array);
-int					get_next_line(const int fd, char **line);
 void				ft_freestr(char *str);
 char				**ft_split_whitespaces(char *str);
 int					ft_isblank(int c);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MDAzODU1MywxNDg2MjQ1OTQ0LDkzMz
-EwOTMzOF19
+eyJoaXN0b3J5IjpbLTEzNTE3MjAyNTEsMTQ4NjI0NTk0NCw5Mz
+MxMDkzMzhdfQ==
 -->
