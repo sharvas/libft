@@ -8,27 +8,6 @@ int			get_next_line_simple(const int fd, char **line);
 int			get_next_line(const int fd, char **line);
 
 int			ft_printf(char const *format, ...);
-
-int			ft_atoi(const char *str);
-intmax_t	ft_atoi_intmax(const char *str);
-void		ft_bzero(void *s, size_t n);
-int			ft_isalnum(int c);
-int			ft_isalpha(int c);
-int			ft_isascii(int c);
-int			ft_isdigit(int c);
-int			ft_isprint(int c);
-char		*ft_itoa(int n);
-char		*ft_itoa_intmax(intmax_t n);
-char		*ft_itoa_unsigned(uintmax_t n);
-char		*ft_itoa_base(uintmax_t n, int b, char type);
-void		*ft_memalloc(size_t size);
-void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
-void		*ft_memchr(const void *s, int c, size_t n);
-int			ft_memcmp(const void *s1, const void *s2, size_t n);
-void		*ft_memcpy(void *dst, const void *src, size_t n);
-void		ft_memdel(void **ap);
-void		*ft_memmove(void *dst, const void *src, size_t n);
-void		*ft_memset(void *b, int c, size_t len);
 void		ft_putchar(char c);
 void		ft_putchar_fd(char c, int fd);
 void		ft_putendl(char const *s);
@@ -37,6 +16,24 @@ void		ft_putnbr(int nb);
 void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr(char const *s);
 void		ft_putstr_fd(char const *s, int fd);
+
+int			ft_atoi(const char *str);
+intmax_t	ft_atoi_intmax(const char *str);
+char		*ft_itoa(int n);
+char		*ft_itoa_intmax(intmax_t n);
+char		*ft_itoa_unsigned(uintmax_t n);
+char		*ft_itoa_base(uintmax_t n, int b, char type);
+int			ft_sqrt(int num);
+
+void		*ft_memalloc(size_t size);
+void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
+void		*ft_memchr(const void *s, int c, size_t n);
+int			ft_memcmp(const void *s1, const void *s2, size_t n);
+void		*ft_memcpy(void *dst, const void *src, size_t n);
+void		ft_memdel(void **ap);
+void		*ft_memmove(void *dst, const void *src, size_t n);
+void		*ft_memset(void *b, int c, size_t len);
+void		ft_bzero(void *s, size_t n);
 
 char		*ft_strcat(char *s1, const char *s2);
 char		*ft_strchr(const char *s, int c);
@@ -71,12 +68,17 @@ char		*ft_strjoinfree_s1(char *s1, char *s2);
 char		*ft_strjoinfree_s2(char *s1, char *s2);
 size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 char		**ft_split_whitespaces(char *str);
+void		ft_swap(char *a, char *b);
+
 
 int			ft_tolower(int c);
 int			ft_toupper(int c);
-void		ft_swap(char *a, char *b);
 int			ft_isblank(int c);
-int			ft_sqrt(int num);
+int			ft_isalnum(int c);
+int			ft_isalpha(int c);
+int			ft_isascii(int c);
+int			ft_isdigit(int c);
+int			ft_isprint(int c);
 
 t_list		*ft_lstnew(void const *content, size_t content_size);
 void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
@@ -90,6 +92,6 @@ void		ft_2d_char_free(char **array);
 void		ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTA1MzU0ODQ3LDE0ODYyNDU5NDQsOTMzMT
-A5MzM4XX0=
+eyJoaXN0b3J5IjpbMTY5NDAxMjEzMSwxNDg2MjQ1OTQ0LDkzMz
+EwOTMzOF19
 -->
