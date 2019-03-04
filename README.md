@@ -1,6 +1,8 @@
 # libft
 
 A personal C library with many recreated C Standard Library functions (including printf) and several additional functions used in other projects (including get_next_line).
+
+In alphabetical order:
 ```c
 int					ft_atoi(const char *str);
 intmax_t			ft_atoi_intmax(const char *str);
@@ -30,6 +32,7 @@ void				ft_putnbr(int nb);
 void				ft_putnbr_fd(int n, int fd);
 void				ft_putstr(char const *s);
 void				ft_putstr_fd(char const *s, int fd);
+
 char				*ft_strcat(char *s1, const char *s2);
 char				*ft_strchr(const char *s, int c);
 void				ft_strclr(char *s);
@@ -50,7 +53,7 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 int					ft_strnequ(char const *s1, char const *s2, size_t n);
 char				*ft_strnew(size_t size);
-char				*ft_strnstr(const char *haystack, const char *needle,			size_t len);
+char				*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char				*ft_strrchr(const char *s, int c);
 char				**ft_strsplit(char const *s, char c);
 char				*ft_strstr(const char *haystack, const char *needle);
@@ -80,6 +83,6 @@ char				**ft_split_whitespaces(char *str);
 int					ft_isblank(int c);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk1Mzc1MTE2MCwxNDg2MjQ1OTQ0LDkzMz
+eyJoaXN0b3J5IjpbMTQ3MDAzODU1MywxNDg2MjQ1OTQ0LDkzMz
 EwOTMzOF19
 -->
