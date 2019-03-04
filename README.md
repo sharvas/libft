@@ -1,6 +1,11 @@
 # libft
 
-My standart C library to us
+A personal C library with many recreated stdlib functions.
+
+String manipulation:
+
+ - List item
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU1NzU0OTE2LDkzMzEwOTMzOF19
+eyJoaXN0b3J5IjpbLTQxODU2ODU2OCw5MzMxMDkzMzhdfQ==
 -->
