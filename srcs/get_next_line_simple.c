@@ -14,16 +14,10 @@
 
 static int	ft_get_line(char **line, char *str)
 {
-	char	*tmp;
-
-	tmp = NULL;
 	if (ft_strchr(str, '\n') == NULL)
 	{
-		tmp = *line;
-		if (!(*line = ft_strjoin(*line, str)))
+		if (!(*line = ft_strjoinfree(*line, str)))
 			return (-1);
-		ft_freestr(tmp);
-		ft_freestr(str);
 	}
 	else
 	{
