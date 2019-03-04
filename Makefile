@@ -31,8 +31,8 @@ SRCS =	ft_2d_char_free.c		ft_memchr.c				ft_strjoin.c \
 		ft_itoa_base.c			ft_putstr.c				ft_strnew.c \
 		ft_itoa_intmax.c		ft_putstr_fd.c			ft_strnstr.c \
 		ft_itoa_unsigned.c		ft_split_whitespaces.c	ft_strrchr.c \
-		ft_listlen_char.c		ft_sqrt.c				ft_strrev.c \
-		ft_listlen_int.c		ft_strcat.c				ft_strsplit.c \
+		ft_sqrt.c				ft_strrev.c \
+		ft_strcat.c				ft_strsplit.c \
 		ft_listsize.c			ft_strchr.c				ft_strstr.c \
 		ft_lstadd.c				ft_strclr.c				ft_strsub.c \
 		ft_lstdel.c				ft_strcmp.c				ft_strtrim.c \
