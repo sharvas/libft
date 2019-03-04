@@ -4,7 +4,7 @@ A personal C library with many recreated C Standard Library functions (including
 
 
 
-Functions in:
+Functions in the library:
 ```c
 // INPUT:
 int			get_next_line_simple(const int fd, char **line);
@@ -101,6 +101,6 @@ void		ft_2d_char_free(char **array);
 void		ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1Mzc4MzQyMSwxNDg2MjQ1OTQ0LDkzMz
-EwOTMzOF19
+eyJoaXN0b3J5IjpbNDIyNjE1OSwxNDg2MjQ1OTQ0LDkzMzEwOT
+MzOF19
 -->
