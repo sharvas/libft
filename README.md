@@ -4,9 +4,11 @@ A personal C library with many recreated C Standard Library functions (including
 
 In alphabetical order:
 ```c
+// INPPUT:
 int			get_next_line_simple(const int fd, char **line);
 int			get_next_line(const int fd, char **line);
 
+// OUTPUT:
 int			ft_printf(char const *format, ...);
 void		ft_putchar(char c);
 void		ft_putchar_fd(char c, int fd);
@@ -17,6 +19,7 @@ void		ft_putnbr_fd(int n, int fd);
 void		ft_putstr(char const *s);
 void		ft_putstr_fd(char const *s, int fd);
 
+// NUMBERS:
 int			ft_atoi(const char *str);
 intmax_t	ft_atoi_intmax(const char *str);
 char		*ft_itoa(int n);
@@ -25,6 +28,7 @@ char		*ft_itoa_unsigned(uintmax_t n);
 char		*ft_itoa_base(uintmax_t n, int b, char type);
 int			ft_sqrt(int num);
 
+// MEMORY:
 void		*ft_memalloc(size_t size);
 void		*ft_memccpy(void *dst, const void *src, int c, size_t n);
 void		*ft_memchr(const void *s, int c, size_t n);
@@ -35,6 +39,7 @@ void		*ft_memmove(void *dst, const void *src, size_t n);
 void		*ft_memset(void *b, int c, size_t len);
 void		ft_bzero(void *s, size_t n);
 
+// STRINGS:
 char		*ft_strcat(char *s1, const char *s2);
 char		*ft_strchr(const char *s, int c);
 void		ft_strclr(char *s);
@@ -70,7 +75,7 @@ size_t		ft_strlcpy(char *dst, const char *src, size_t size);
 char		**ft_split_whitespaces(char *str);
 void		ft_swap(char *a, char *b);
 
-
+// ASCII:
 int			ft_tolower(int c);
 int			ft_toupper(int c);
 int			ft_isblank(int c);
@@ -92,6 +97,6 @@ void		ft_2d_char_free(char **array);
 void		ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY5NDAxMjEzMSwxNDg2MjQ1OTQ0LDkzMz
+eyJoaXN0b3J5IjpbLTEzMzgwMTIyNCwxNDg2MjQ1OTQ0LDkzMz
 EwOTMzOF19
 -->
