@@ -2,7 +2,7 @@
 
 A personal C library with many recreated C Standard Library functions (including printf) and several additional functions used in other projects (including get_next_line).
 
-To compile run ```make```. It will compile a library ***libft.a***. Compile projects with this library and header files (.h in includes) to use the functions.
+To compile run ```make```. It will compile a library ***libft.a***. Compile projects with this library and libft.h (in includes) to use the functions.
 
 There is a simple main file included:
 ```c
@@ -145,7 +145,8 @@ void ft_2d_int_free(int **array, int size);
 void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
+Function cannot leak. All errors must be handled carefully. In no way can the function quit in an unexpected manner (Segmentation fault, bus error, double free, etc).
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2MTk1Mzg5MSwtNDg4MDA0NTk3LDE1OT
+eyJoaXN0b3J5IjpbLTQxMTAwMjk4NiwtNDg4MDA0NTk3LDE1OT
 U4ODU5NTIsMTQ4NjI0NTk0NCw5MzMxMDkzMzhdfQ==
 -->
