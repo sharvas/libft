@@ -32,7 +32,14 @@ gcc main.c libft.a -I includes/
 ```
 
 Ant the resulting program behaves similarly to ```cat```:
-
+```shell
+➜  libft git:(master) ✗ ./a.out text.txt
+One
+Two
+And three!!!
+???
+oh why...
+```
 
 Functions in the library:
 ```c
@@ -131,6 +138,6 @@ void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4ODAwNDU5NywxNTk1ODg1OTUyLDE0OD
-YyNDU5NDQsOTMzMTA5MzM4XX0=
+eyJoaXN0b3J5IjpbLTI4NDU5MDMxOSwtNDg4MDA0NTk3LDE1OT
+U4ODU5NTIsMTQ4NjI0NTk0NCw5MzMxMDkzMzhdfQ==
 -->
