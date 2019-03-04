@@ -1,8 +1,8 @@
 # libft
 
-A personal C library with many recreated stdlib functions.
+A personal C library with many recreated stdlib functions ().
 
-String manipulation:
+ft_2d_char_free.c
 ft_2d_int_free.c
 ft_atoi.c
 ft_atoi_intmax.c
@@ -83,9 +83,7 @@ ft_tolower.c
 ft_toupper.c
 get_next_line.c
 get_next_line_simple.c
-
-String manipulation:
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjM0NjEyNzUxLDE0ODYyNDU5NDQsOTMzMT
+eyJoaXN0b3J5IjpbNTIyNjYyMjEyLDE0ODYyNDU5NDQsOTMzMT
 A5MzM4XX0=
 -->
