@@ -81,26 +81,26 @@ void ft_swap(char *a, char *b);
 int ft_tolower(int c);
 int ft_toupper(int c);
 int ft_isblank(int c);
-int			ft_isalnum(int c);
-int			ft_isalpha(int c);
-int			ft_isascii(int c);
-int			ft_isdigit(int c);
-int			ft_isprint(int c);
+int ft_isalnum(int c);
+int ft_isalpha(int c);
+int ft_isascii(int c);
+int ft_isdigit(int c);
+int ft_isprint(int c);
 
 // LISTS:
-t_list		*ft_lstnew(void const *content, size_t content_size);
-void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
-void		ft_lstdel(t_list **alst, void (*del)(void *, size_t));
-void		ft_lstadd(t_list **alst, t_list *new);
-void		ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list		*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+t_list *ft_lstnew(void const *content, size_t content_size);
+void ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
+void ft_lstdel(t_list **alst, void (*del)(void *, size_t));
+void ft_lstadd(t_list **alst, t_list *new);
+void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
+t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 
 // TO FREE:
-void		ft_2d_int_free(int **array, int size);
-void		ft_2d_char_free(char **array);
-void		ft_freestr(char *str);
+void ft_2d_int_free(int **array, int size);
+void ft_2d_char_free(char **array);
+void ft_freestr(char *str);
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDQ0MDg3ODUsMTQ4NjI0NTk0NCw5Mz
-MxMDkzMzhdfQ==
+eyJoaXN0b3J5IjpbLTgyNTQyMjc3MywxNDg2MjQ1OTQ0LDkzMz
+EwOTMzOF19
 -->
