@@ -33,7 +33,7 @@ gcc main.c libft.a -I includes/
 
 Ant the resulting program behaves similarly to ```cat```:
 ```bash
-➜  libft ./a.out text.txt
+➜ libft ./a.out text.txt
 One
 Two
 And three!!!
@@ -41,7 +41,7 @@ And three!!!
 oh why...
 ```
 ```bash
-➜  libft cat text.txt
+➜ libft cat text.txt
 One
 Two
 And three!!!
