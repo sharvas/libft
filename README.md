@@ -1,8 +1,8 @@
 # libft
 
-A personal C library with many recreated C Standard Library functions and several additional functions used in other projects (including printf, get_next_line and may others).
+A personal C library with many recreated C Standard Library functions and several additional functions used in other projects (including ft_printf, get_next_line and many others).
 
-To compile run ```make``` and it will compile a library ***libft.a***. Compile projects with this library and libft.h (in includes) to use the functions.
+To compile - run `make` and it will compile a library ***libft.a***. Compile projects with this library and includes to use the functions.
 
 There is a simple main file included:
 ```c
@@ -27,12 +27,12 @@ int main (int ac, char **av)
 ```
 
 To compile type:
-```shell
+```console
 gcc main.c libft.a -I includes/
 ```
 
 Ant the resulting program behaves similarly to ```cat```:
-```bash
+```console
 ➜ libft ./a.out text.txt
 One
 Two
@@ -40,7 +40,7 @@ And three!!!
 ???
 oh why...
 ```
-```bash
+```console
 ➜ libft cat text.txt
 One
 Two
