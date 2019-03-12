@@ -1,4 +1,4 @@
-# A personal C library (libft)
+# Personal C library (libft)
 
 A personal C library with many recreated C Standard Library functions and several additional functions used in other projects (including `ft_printf`, `get_next_line` and many others).
 
@@ -146,5 +146,5 @@ void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
 
-All function are written according to the 42 standard:
+All function are written according to the 42 standards:
 *Functions cannot leak. All errors must be handled carefully. In no way can the function quit in an unexpected manner (Segmentation fault, bus error, double free, etc).*
