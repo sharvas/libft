@@ -1,8 +1,8 @@
 # libft
 
-A personal C library with many recreated C Standard Library functions and several additional functions used in other projects (including ft_printf, get_next_line and many others).
+A personal C library with many recreated C Standard Library functions and several additional functions used in other projects (including `ft_printf`, `get_next_line` and many others).
 
-To compile - run `make` and it will compile a library ***libft.a***. Compile projects with this library and includes to use the functions.
+To compile - run `make` and it will compile a library ***libft.a***. Compile projects with this library and `includes` to use the functions.
 
 There is a simple main file included:
 ```c
@@ -31,22 +31,22 @@ To compile type:
 gcc main.c libft.a -I includes/
 ```
 
-Ant the resulting program behaves similarly to ```cat```:
+Ant the resulting program will behave similarly to `cat`:
 ```console
-➜ libft ./a.out text.txt
-One
-Two
-And three!!!
-???
-oh why...
+$> ./a.out text.txt
+Hello!
+Labas!
+Bonjour!
+...
+こんにちは !
 ```
 ```console
-➜ libft cat text.txt
-One
-Two
-And three!!!
-???
-oh why...
+$> cat text.txt
+Hello!
+Labas!
+Bonjour!
+...
+こんにちは !
 ```
 
 Functions in the library:
@@ -145,5 +145,6 @@ void ft_2d_int_free(int **array, int size);
 void ft_2d_char_free(char **array);
 void ft_freestr(char *str);
 ```
+
 All function are written according to the 42 standard:
 *Functions cannot leak. All errors must be handled carefully. In no way can the function quit in an unexpected manner (Segmentation fault, bus error, double free, etc).*
