@@ -1,4 +1,4 @@
-# libft
+# A personal C library (libft)
 
 A personal C library with many recreated C Standard Library functions and several additional functions used in other projects (including `ft_printf`, `get_next_line` and many others).
 
